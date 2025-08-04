@@ -18,15 +18,18 @@
 **FastAPICLI**-dan istifadə etmək üçün **`fastapi_cli.exe`** icra edilə bilən faylını yükləmək kifayətdir. Quraşdırmaya ehtiyac yoxdur!
 
 1.  **`fastapi_cli.exe` faylını yükləyin:**
-    Ən son versiyanı [**Buradan Yükləyin**](https://github.com/prestgg/FastAPICLI/releases/latest/download/fastapi_cli.exe).
+    Ən son versiyanı [**Buradan Yükləyin**]([https://github.com/Prestgg1/fastapi_cli/releases/tag/fastapi_cli](https://github.com/Prestgg1/fastapi_cli/releases/tag/fastapi_cli)).
 2.  **İcra Edin:**
-    Yüklədiyiniz **`fastapi_cli.exe`** faylını istədiyiniz qovluğa yerləşdirin və əmrlər sətrində (Command Prompt/Terminal) həmin qovluğa keçərək işə salın:
-
+    Yüklədiyiniz **`fastapi_cli`** faylını istədiyiniz qovluğa yerləşdirin və əmrlər sətrində (Command Prompt/Terminal) həmin qovluğa keçərək işə salın:
+    Windows üçün
     ```bash
     ./fastapi_cli.exe --help
     ```
-    *(Qeyd: Əgər siz Linux və ya macOS istifadəçisisinizsə və Wine kimi bir uyğunluq qatı ilə çalışırsınızsa, `wine fastapi_cli.exe --help` istifadə etməli ola bilərsiniz. CLI əsasən Windows üçün nəzərdə tutulub.)*
 
+    Linux üçün
+    ```bash
+    ./fastapi_cli --help
+    ```
 ---
 
 ## İstifadə
