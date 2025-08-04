@@ -19,8 +19,6 @@
 
 1.  **`fastapi_cli.exe` faylını yükləyin:**
     Ən son versiyanı [**Buradan Yükləyin**](https://github.com/prestgg/FastAPICLI/releases/latest/download/fastapi_cli.exe).
-    *(Qeyd: Bu linki öz **GitHub Releases** səhifənizdəki `.exe` faylının birbaşa yükləmə linki ilə əvəz etməyi unutmayın.)*
-
 2.  **İcra Edin:**
     Yüklədiyiniz **`fastapi_cli.exe`** faylını istədiyiniz qovluğa yerləşdirin və əmrlər sətrində (Command Prompt/Terminal) həmin qovluğa keçərək işə salın:
 
