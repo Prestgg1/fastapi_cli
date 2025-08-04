@@ -44,14 +44,14 @@ def show_${modelFileName}(item_id: int):
 
 @router.post("/")
 def create_${modelFileName}(item: $modelName):
-    db.append(item.dict())
+    db.append(item.model_dump())
     return {"message": "$modelName yaradıldı", "data": item}
 
 @router.put("/{item_id}")
 def update_${modelFileName}(item_id: int, updated: $modelName):
     for index, item in enumerate(db):
         if item["id"] == item_id:
-            db[index] = updated.dict()
+            db[index] = updated.model_dump()
             return {"message": "$modelName yeniləndi"}
     return {"error": "$modelName tapılmadı"}
 ''';
