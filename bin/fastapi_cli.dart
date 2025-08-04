@@ -3,6 +3,7 @@ import 'package:fastapi_cli/commands/create_model.dart';
 import "package:fastapi_cli/commands/create_router.dart";
 import "package:fastapi_cli/commands/create_seed.dart";
 import "package:fastapi_cli/commands/run_seed.dart";
+import "package:fastapi_cli/commands/create_schema.dart";
 
 void main(List<String> args) {
   var greenPen = AnsiPen()..green(bold: true);
@@ -18,6 +19,7 @@ void main(List<String> args) {
     print(cyanPen('  fastapi_cli create:router User\n'));
     print(cyanPen('  fastapi_cli create:seed User\n'));
     print(cyanPen('  fastapi_cli run:seed User\n'));
+    print(cyanPen('  fastapi_cli create:schema User\n'));
     print(yellowPen('ℹ️ Mövcud əmrləri görmək üçün sənədlərə baxın.'));
   } else {
     String command = args[0];
@@ -53,6 +55,14 @@ void main(List<String> args) {
           print(redPen('❌ Seed adı daxil edilməyib.'));
         } else {
           runSeed(parameter);
+        }
+        break;
+
+      case 'create:schema':
+        if (parameter == null) {
+          print(redPen('❌ Schema adı daxil edilməyib.'));
+        } else {
+          createSchema(parameter);
         }
         break;
 
